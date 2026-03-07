@@ -3,98 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A modern website" />
-    <title>My Site</title>
+    <meta name="description" content="Alex Morgan — Motion Designer & Visual Storyteller. Crafting bold animation for brands, titles, and beyond." />
+    <title>Alex Morgan — Motion Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+    <!-- Nav -->
     <header class="site-header">
       <nav class="nav container">
-        <a href="/" class="nav__logo">MySite</a>
+        <a href="/" class="nav__logo" aria-label="Alex Morgan — home">AM</a>
         <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
-          <span></span><span></span><span></span>
+          <span></span><span></span>
         </button>
         <ul class="nav__links">
-          <li><a href="#features">Features</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="nav__hire">Hire me</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">Build something <span>great.</span></h1>
-          <p class="hero__subtitle">A clean, modern starting point — no frameworks, just the web platform.</p>
-          <a href="#features" class="btn">Get started</a>
+
+      <!-- Hero -->
+      <section class="hero" aria-label="Introduction">
+        <div class="container hero__inner">
+          <div class="hero__tag reveal-up">
+            <span class="dot"></span> Available for projects — 2026
+          </div>
+          <h1 class="hero__name">
+            <span class="reveal-up delay-1">Alex</span>
+            <span class="reveal-up delay-2">Morgan</span>
+          </h1>
+          <div class="hero__sub reveal-up delay-3">
+            <p>Motion Designer &amp; Visual Storyteller</p>
+            <p class="hero__location">Based in Los Angeles</p>
+          </div>
+          <div class="hero__actions reveal-up delay-4">
+            <button class="btn btn--reel" id="reel-btn">
+              <span class="play-icon">&#9654;</span> Watch Reel
+            </button>
+            <a href="#work" class="btn btn--ghost">View Work</a>
+          </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">
+          <div class="scroll-line"></div>
         </div>
       </section>
 
-      <section id="features" class="features section">
+      <!-- Work -->
+      <section id="work" class="work section">
         <div class="container">
-          <h2 class="section__title">Features</h2>
-          <div class="grid">
-            <div class="card">
-              <div class="card__icon">&#9881;</div>
-              <h3>Fast</h3>
-              <p>Zero dependencies means instant load times and no bloat.</p>
-            </div>
-            <div class="card">
-              <div class="card__icon">&#9681;</div>
-              <h3>Responsive</h3>
-              <p>Looks great on every device, from phone to widescreen.</p>
-            </div>
-            <div class="card">
-              <div class="card__icon">&#9964;</div>
-              <h3>Accessible</h3>
-              <p>Semantic HTML and ARIA attributes built in from the start.</p>
-            </div>
+          <div class="section__header reveal-up">
+            <span class="section__label">Selected Work</span>
+            <h2 class="section__title">Projects</h2>
+          </div>
+          <div class="projects">
+
+            <article class="project reveal-up">
+              <a href="#" class="project__media" aria-label="View Kinetic Type project"
+                style="--grad: linear-gradient(135deg, #2d1b69 0%, #11998e 100%)">
+                <span class="project__play" aria-hidden="true">&#9654;</span>
+              </a>
+              <div class="project__info">
+                <span class="project__num">01</span>
+                <div>
+                  <h3 class="project__name">Kinetic Type</h3>
+                  <p class="project__meta">Title Sequence &middot; 2025</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal-up delay-1">
+              <a href="#" class="project__media" aria-label="View Brand in Motion project"
+                style="--grad: linear-gradient(135deg, #f7971e 0%, #d63031 100%)">
+                <span class="project__play" aria-hidden="true">&#9654;</span>
+              </a>
+              <div class="project__info">
+                <span class="project__num">02</span>
+                <div>
+                  <h3 class="project__name">Brand in Motion</h3>
+                  <p class="project__meta">Brand Film &middot; 2025</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal-up delay-2">
+              <a href="#" class="project__media" aria-label="View Loop Studies project"
+                style="--grad: linear-gradient(135deg, #0f3443 0%, #34e89e 100%)">
+                <span class="project__play" aria-hidden="true">&#9654;</span>
+              </a>
+              <div class="project__info">
+                <span class="project__num">03</span>
+                <div>
+                  <h3 class="project__name">Loop Studies</h3>
+                  <p class="project__meta">Personal &middot; 2024</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal-up delay-3">
+              <a href="#" class="project__media" aria-label="View Metamorphosis project"
+                style="--grad: linear-gradient(135deg, #8e0e00 0%, #8b5cf6 100%)">
+                <span class="project__play" aria-hidden="true">&#9654;</span>
+              </a>
+              <div class="project__info">
+                <span class="project__num">04</span>
+                <div>
+                  <h3 class="project__name">Metamorphosis</h3>
+                  <p class="project__meta">Music Video &middot; 2024</p>
+                </div>
+              </div>
+            </article>
+
           </div>
         </div>
       </section>
 
+      <!-- About -->
       <section id="about" class="about section">
-        <div class="container about__inner">
-          <div class="about__text">
-            <h2 class="section__title">About</h2>
-            <p>This is a minimal, production-ready HTML/CSS/JS template designed to be deployed to Cloudflare Pages. No build step, no bundler — just open the files and go.</p>
-            <p>Edit <code>index.html</code>, <code>css/style.css</code>, and <code>js/main.js</code> to make it your own.</p>
+        <div class="container about__grid">
+          <div class="about__text reveal-up">
+            <div class="section__header">
+              <span class="section__label">About</span>
+              <h2 class="section__title">The craft behind<br>the motion.</h2>
+            </div>
+            <p>I'm a motion designer with 8+ years of experience creating bold, purposeful animation for brands, broadcasters, and artists. I believe great motion design doesn't just look good — it communicates, guides, and feels inevitable.</p>
+            <p>From concept to final render, I work closely with clients to bring ideas to life with precision and personality.</p>
+            <div class="tools">
+              <span class="section__label">Tools</span>
+              <ul class="tools__list">
+                <li>After Effects</li>
+                <li>Cinema 4D</li>
+                <li>DaVinci Resolve</li>
+                <li>Premiere Pro</li>
+                <li>Illustrator</li>
+                <li>Figma</li>
+              </ul>
+            </div>
           </div>
-          <div class="about__visual" aria-hidden="true">
-            <div class="shape"></div>
+          <div class="about__portrait reveal-up delay-2" aria-hidden="true">
+            <div class="portrait-placeholder">
+              <!-- Replace with <img src="your-photo.jpg" alt="Alex Morgan" /> -->
+              <span>AM</span>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- Contact -->
       <section id="contact" class="contact section">
         <div class="container">
-          <h2 class="section__title">Contact</h2>
-          <form class="form" id="contact-form" novalidate>
-            <div class="form__group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" autocomplete="name" required />
+          <div class="contact__inner reveal-up">
+            <div class="section__header">
+              <span class="section__label">Contact</span>
+              <h2 class="section__title">Let's make something<br>worth watching.</h2>
             </div>
-            <div class="form__group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" autocomplete="email" required />
-            </div>
-            <div class="form__group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send message</button>
-            <p class="form__status" id="form-status" aria-live="polite"></p>
-          </form>
+            <a href="mailto:hello@alexmorgan.co" class="email-link">hello@alexmorgan.co</a>
+            <ul class="social">
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Vimeo</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>&copy; <span id="year"></span> MySite. All rights reserved.</p>
+        <span>Alex Morgan</span>
+        <span>&copy; <span id="year"></span></span>
       </div>
     </footer>
+
+    <!-- Reel Modal -->
+    <div class="modal" id="reel-modal" role="dialog" aria-modal="true" aria-label="Showreel" hidden>
+      <div class="modal__backdrop" id="modal-backdrop"></div>
+      <div class="modal__content">
+        <button class="modal__close" id="modal-close" aria-label="Close reel">&times;</button>
+        <div class="modal__video">
+          <!--
+            Replace the placeholder below with your reel embed, e.g.:
+            <iframe src="https://player.vimeo.com/video/YOUR_ID?autoplay=1"
+              frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          -->
+          <div class="reel-placeholder">
+            <span>Add your reel embed here</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/main.js"></script>
   </body>
