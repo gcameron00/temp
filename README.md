@@ -1,3 +1,5 @@
+⚠️ Archived — This repository has been archived and is now read-only.
+
 # My Site
 
 A minimal, modern static website built with plain HTML, CSS, and JavaScript — no frameworks, no build step. Designed to be deployed directly to [Cloudflare Pages](https://pages.cloudflare.com).
